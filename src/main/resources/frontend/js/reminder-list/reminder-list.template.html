@@ -1,0 +1,9 @@
+<h2>There are {{$ctrl.reminders.length}} reminders</h2>
+
+<ul class="unstyled">
+    <li ng-repeat="reminder in $ctrl.reminders">
+        <input type="checkbox" ng-model="reminder.status" ng-true-value="'DONE'" ng-false-value="'PENDING'" readonly>
+        <span class="{{reminder.status}}">{{reminder.content}}</span>
+        <span class="due-{{reminder.status}}"> Due on {{reminder.dueDate}}</span>
+    </li>
+</ul>

@@ -1,0 +1,13 @@
+.DONE {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.due-DONE{
+    text-decoration: line-through;
+}
+
+.due-PENDING{
+    text-decoration: underline;
+    color: red;
+}
